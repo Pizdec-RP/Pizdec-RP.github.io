@@ -28693,7 +28693,7 @@ const ConfigurationModal = () => {
             checked: isOverlayEnabled,
             onChange: handleToggleOverlayOnOff
           }),
-          label: "Image Overlay",
+          label: "путлер лошара",
           labelPlacement: "end"
         })
       }), /* @__PURE__ */ jsx$1("div", {

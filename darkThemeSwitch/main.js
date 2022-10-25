@@ -6,4 +6,4 @@ document.addEventListener('DOMContentLoaded',()=>{
         circle.classList.toggle("night");
         world.classList.toggle("night");
     }
-})
+});

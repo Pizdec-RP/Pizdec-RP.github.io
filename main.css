@@ -1,0 +1,49 @@
+body {
+    background-color: dimgray;
+}
+.world {
+    background-color: aqua;
+    width: 99%;
+    height: 97%;
+    position: absolute;
+    border-color: dimgray;
+    transition: all 1s;
+}
+.world.night {
+    background-color: black;
+}
+.bckgcard {
+    background-color: lightslategray;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 20px;
+    width: 130px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.circle {
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 6px;
+    
+    background-image: url("sun.jpg");
+    background-color: rgb(84, 94, 104);
+    background-size: 30px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease 0s;
+}
+
+.circle.night {
+    transform: translate(270%,0);
+    background-image: url("moon.jpg");
+}

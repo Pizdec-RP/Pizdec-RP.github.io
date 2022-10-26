@@ -3,22 +3,23 @@ document.addEventListener('DOMContentLoaded',()=>{
     var canvas = document.getElementById("world");
     var ctx = canvas.getContext("2d");
     ctx.fillRect(0,0, canvas.width, canvas.height);
-    let width = 10, height = 20;
-    blocks = worldgen();
+    let width = 0, height = 80;
+    blocks = worldgen(width, height);
     drawWorld(blocks, ctx);
 
 })
 
 function drawWorld(blockarray, context) {
-    for (y = 0; y < blockarray.length; y++) {
+    for (y = blockarray.length; y >= 0; y--) {
         for (x=0; x < blockarray[0].length; x++) {
             let name = idToBlock(blockarray[y][x]);
             if (name != null) {
                 img = new Image();
-                Image.src = "textures/"+name+".png";
-                base_image.onload = function(){
-                    context.drawImage(base_image, x*10, y*10, 10, 10);
-                }
+                img.src = "textures/"+name+".png";
+                context.drawImage(img, x*10, y*10, 10, 10);
+                /*img.onload = function(){
+                    
+                }*/
             }
         }
     }

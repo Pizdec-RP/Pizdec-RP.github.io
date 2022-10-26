@@ -1,0 +1,121 @@
+body {
+    background-color: dimgray;
+}
+.main {
+    background-color:rgb(203, 203, 203);
+    position:fixed;
+    border-color: dimgray;
+    transition: all 1s;
+    top:10px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+}
+.main.night {
+    background-color: black;
+}
+.name {
+    color:crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    top: 80px;
+    left: 10%;
+    right: 10%;
+    font-size: xx-large;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    height: fit-content;
+}
+.description {
+    color:black;
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    transition: all 1s;
+    text-align: center;
+    overflow:auto;
+}
+.description.night {
+    color:antiquewhite;
+    background-color:rgb(36, 36, 36);
+}
+.preimushestva {
+    color:black;
+    position: fixed;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    transition: all 1s;
+    text-align: center;
+    overflow: auto;
+}
+.preimushestva.night {
+    color:antiquewhite;
+    background-color:rgb(36, 36, 36);
+}
+.invite {
+    color:black;
+    position: fixed;
+    top: 87%;
+    left: 5%;
+    right: 5%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    transition: all 1s;
+    text-align: center;
+    overflow: auto;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.invite.night {
+    color:antiquewhite;
+    background-color:rgb(36, 36, 36);
+}
+.img {
+    position: fixed;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.theme {
+    background-color: lightslategray;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    height: 20px;
+    width: 130px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.circle {
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 6px;
+    
+    background-image: url("darkThemeSwitch/sun.jpg");
+    background-color: rgb(84, 94, 104);
+    background-size: 30px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease 0s;
+}
+
+.circle.night {
+    transform: translate(270%,0);
+    background-image: url("darkThemeSwitch/moon.jpg");
+}

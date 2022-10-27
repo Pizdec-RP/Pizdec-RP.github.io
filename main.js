@@ -3,13 +3,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     let button = document.querySelector(".theme");
     let circle = document.querySelector(".circle");
     let description = document.querySelector(".description");
-    let preimushestva = document.querySelector(".preimushestva");
-    let invite = document.querySelector(".invite");
+    let description2 = document.querySelector(".description2");
     button.onclick = ()=>{
         circle.classList.toggle("night");
         world.classList.toggle("night");
         description.classList.toggle("night");
-        preimushestva.classList.toggle("night");
-        invite.classList.toggle("night");
+        description2.classList.toggle("night");
     }
 });

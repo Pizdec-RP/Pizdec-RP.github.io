@@ -2,27 +2,37 @@ body {
     background-color: dimgray;
 }
 .main {
-    background-color:rgb(203, 203, 203);
-    position:fixed;
+    background: url("interactiveMinecraftWorld/textures/white_wool.png");
+    background-size: 20px;
+    position: static;
     border-color: dimgray;
-    transition: all 1s;
+    transition: 1s;
     top:10px;
     bottom: 0px;
     left: 10px;
     right: 10px;
+    margin-bottom: 20px;
+    padding: 150px;
 }
 .main.night {
-    background-color: black;
+    background: url("interactiveMinecraftWorld/textures/black_wool.png");
+}
+.cap {
+    background-color:darkslategray;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
 }
 .name {
     color:crimson;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: fixed;
-    top: 80px;
+    position: static;
     left: 10%;
     right: 10%;
+    top: 40px;
     font-size: xx-large;
-    display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -31,60 +41,49 @@ body {
 }
 .description {
     color:black;
-    position: fixed;
+    position: static;
     top: 40%;
-    left: 5%;
-    right: 5%;
     background-color: rgb(249, 249, 249);
     border-radius: 10px;
-    transition: all 1s;
     text-align: center;
-    overflow:auto;
+    margin-bottom: 10px;
+    transition: 1s;
 }
 .description.night {
     color:antiquewhite;
     background-color:rgb(36, 36, 36);
 }
-.preimushestva {
+.description2 {
     color:black;
-    position: fixed;
-    top: 65%;
-    left: 5%;
-    right: 5%;
+    position: static;
+    top: 40%;
     background-color: rgb(249, 249, 249);
     border-radius: 10px;
-    transition: all 1s;
     text-align: center;
-    overflow: auto;
+    margin-bottom: 10px;
+    transition: 1s;
 }
-.preimushestva.night {
+.description2.night {
     color:antiquewhite;
     background-color:rgb(36, 36, 36);
 }
-.invite {
-    color:black;
+.inv {
+    text-decoration: none;
     position: fixed;
-    top: 87%;
-    left: 5%;
-    right: 5%;
-    background-color: rgb(249, 249, 249);
-    border-radius: 10px;
-    transition: all 1s;
+    border-radius: 5px;
+    background-color: green;
+    color:aliceblue;
     text-align: center;
-    overflow: auto;
-    font-size: xx-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:larger;
+    width: 150px;
+    height: 25px;
+    right: 50px;
+    top: 30px;
 }
-.invite.night {
-    color:antiquewhite;
-    background-color:rgb(36, 36, 36);
-}
-.img {
-    position: fixed;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-}
+
+
+
+
 .theme {
     background-color: lightslategray;
     padding: 15px;
@@ -92,9 +91,9 @@ body {
     border-radius: 30px;
     height: 20px;
     width: 130px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position: fixed;
+    top: 15px;
+    left: 70%;
 }
 
 .circle {

@@ -76,9 +76,8 @@ body {
 .image {
     position: static;
     overflow: hidden;
-    width: 465px;
-    height: 60px;
-    border-radius: 30px;
+    width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
     left: 0;

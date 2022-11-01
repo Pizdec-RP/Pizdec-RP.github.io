@@ -8,8 +8,8 @@ body {
     border-color: dimgray;
     transition: 1s;
     top:10px;
-    margin-bottom: 20px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 50px;
 }
 .main.night {

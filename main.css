@@ -181,13 +181,14 @@ body {
 
 .capimg {
     position: fixed;
-    left: 55%;
-    top: 8px;
+    right: 1%;
+    bottom:1%;
+    overflow: hidden;
 }
 
 #squaredimage {
     border-color: black;
-    border-style:solid;
+    border-style: solid;
     border-radius: 5px;
     border-width: 2px;
 }

@@ -3,14 +3,11 @@ body {
 }
 .main {
     background: url("interactiveMinecraftWorld/textures/white_wool.png");
-    background-size: 20px;
+    background-size: 60px;
     position: static;
     border-color: dimgray;
     transition: 1s;
     top:10px;
-    bottom: 0px;
-    left: auto;
-    right: auto;
     margin-bottom: 20px;
     padding: 10px;
     padding-top: 50px;
@@ -188,7 +185,7 @@ body {
 
 #squaredimage {
     border-color: black;
-    border-style: solid;
+    border-style: groove;
     border-radius: 5px;
-    border-width: 2px;
+    border-width: 5px;
 }

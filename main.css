@@ -150,7 +150,6 @@ body {
 }
 
 #profileicon {
-    display: table-cell;
     width: 64px;
     height: 64px;
     position: static;
@@ -163,7 +162,6 @@ body {
 #nickname {
     position: static;
     display: flex;
-    display: table-cell;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     margin-left: 0px;

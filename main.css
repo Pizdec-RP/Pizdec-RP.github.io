@@ -250,3 +250,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+
+.pimg {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: block;
+    align-self: center;
+}

@@ -2,15 +2,18 @@ body {
     background-color: dimgray;
 }
 .world {
-    background-color: aqua;
-    width: 99%;
-    height: 97%;
-    position: absolute;
-    border-color: dimgray;
-    transition: all 1s;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 800px;
+    position: static;
+    transition: all 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    display: flex;
 }
 .world.night {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
 }
 .bckgcard {
     background-color: lightslategray;
@@ -46,4 +49,130 @@ body {
 .circle.night {
     transform: translate(270%,0);
     background-image: url("moon.jpg");
+}
+
+.box {
+    background-color:#dde2e8;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-top: 30px;
+    height:fit-content;
+    transition: all 0.5s;
+}
+.box.night {
+    background-color: #454545;
+}
+
+.titlebox {
+    background-color: #1ee06582;
+    transition: all 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titlebox.night {
+    background-color: #7e303082;
+}
+
+.title {
+    background-color: #00c907;
+    border-radius: 10px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+
+.title.night {
+    background-color: #b90000;
+}
+
+#ttl {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.boxsection {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #454545;
+    transition: all 0.5s;
+}
+
+.text.night {
+    color: #c8d0d8;
+}
+
+.cap {
+    background-color:#454545;
+    position: fixed;
+    width: 99%;
+    height: 80px;
+    display: flex;
+}
+
+.dopinfo {
+    background-color:#dde2e8;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-right: 5%;
+    transition: all 0.5s;
+    list-style: disc inside;
+}
+
+.dopinfo.night {
+    background-color: #454545;
+}
+
+#justbox1 {
+    background-color: #ff9d00;
+    width: 30px;
+    height: 30px;
+    margin-left: 90%;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#justbox2 {
+    background-color: #000000;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#justbox3 {
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.subtitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:#000000;
+    transition: all 0.5s;
+}
+
+.subtitle.night {
+    color:#c8d0d8;
 }

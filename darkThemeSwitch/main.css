@@ -18,14 +18,13 @@ body {
 .bckgcard {
     background-color: lightslategray;
     padding: 15px;
-    margin-bottom: 10px;
     border-radius: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 20px;
     width: 130px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    margin-top: 15px;
+    margin-left: 3%;
 }
 
 .circle {
@@ -56,7 +55,8 @@ body {
     border-radius: 10px;
     margin-top: 100px;
     margin-left: 5%;
-    margin-right: 10%;
+    margin-right: 5%;
+    width: 800px;
     padding-top: 30px;
     height:fit-content;
     transition: all 0.5s;
@@ -120,59 +120,4 @@ body {
     width: 99%;
     height: 80px;
     display: flex;
-}
-
-.dopinfo {
-    background-color:#dde2e8;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 10px;
-    margin-top: 100px;
-    padding-left: 15px;
-    padding-right: 25px;
-    margin-right: 5%;
-    transition: all 0.5s;
-    list-style: disc inside;
-}
-
-.dopinfo.night {
-    background-color: #454545;
-}
-
-#justbox1 {
-    background-color: #ff9d00;
-    width: 30px;
-    height: 30px;
-    margin-left: 90%;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-
-#justbox2 {
-    background-color: #000000;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-
-#justbox3 {
-    background-color: #ffffff;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-
-.subtitle {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    color:#000000;
-    transition: all 0.5s;
-}
-
-.subtitle.night {
-    color:#c8d0d8;
 }

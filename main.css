@@ -252,10 +252,28 @@ body {
 }
 
 .pimg {
+    margin-top: 10px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     display: block;
     align-self: center;
+    width: 70%;
+}
+
+.discordframe {
+    height: 500px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#list {
+    list-style-type: disc !important;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }

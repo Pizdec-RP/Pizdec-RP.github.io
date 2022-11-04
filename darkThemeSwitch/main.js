@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     let tb = document.querySelector(".titlebox");
     let title = document.querySelector(".title");
     let text = document.querySelectorAll(".text");
-    let di = document.querySelector(".dopinfo");
-    let subtitle = document.querySelector(".subtitle");
     button.onclick = ()=>{
         n(circle);
         n(world);
@@ -15,8 +13,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         n(tb);
         n(title);
         mn(text);
-        n(di);
-        n(subtitle);
     }
 
 });

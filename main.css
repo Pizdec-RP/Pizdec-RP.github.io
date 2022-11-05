@@ -1,226 +1,257 @@
 body {
-    background-color: dimgray;
+    background-color: rgb(21 21 27);
 }
 .main {
-    background: url("interactiveMinecraftWorld/textures/white_wool.png");
-    background-size: 40px;
+    background-color: rgb(21 21 27);
     position: static;
-    border-color: dimgray;
-    transition: 1s;
-    top:10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 50px;
-}
-.main.night {
-    background: url("interactiveMinecraftWorld/textures/black_wool.png");
-    background-size: 40px;
-}
-.cap {
-    background-color:darkslategray;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
 }
 .name {
-    color:crimson;
+    color:rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: static;
-    left: 10%;
-    right: 10%;
-    top: 40px;
-    font-size: 60px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width:fit-content;
-    height: fit-content;
+    font-size: 3.75rem;
+    line-height: 1;
+    margin: 0;
 }
-.description {
-    color:black;
-    position: static;
-    top: 40%;
-    background-color: rgb(249, 249, 249);
+
+.pictureandname {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 340px);
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.pimg {
+    width: 400px;
+    height: 400px;
+    margin-top: 60px;
+    /*float: right;*/
+    margin-right: 5%;
+    margin-left: 5%;
     border-radius: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 2px;
-    text-indent: 50px;
-    transition: 200ms;
-    font-size: 25px;
 }
-.description.night {
-    color:antiquewhite;
-    background-color:rgb(36, 36, 36);
+
+.hidden {
+    display: none;
+}
+
+.nameinfa {
+    color: rgb(143 143 148);
+    tab-size: 4;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.namecase {
+    /*float: left;*/
+    width: 485px;
 }
 
 .inv {
-    text-decoration:solid;
-    position: fixed;
-    border-radius: 40px;
-    background-color: green;
-    color:aliceblue;
-    text-align: center;
-    font-size: 28px;
-    /*width: 230px;
-    height: 44px;*/
+    border-radius: 1rem;
     width: fit-content;
-    height: fit-content;
-    margin-top: 17px;
-    margin-left: 5px;
-}
-.image {
-    position: static;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    margin-bottom: 15px;
-}
-
-
-
-.theme {
-    background-color: lightslategray;
+    height:fit-content;
+    font-size: 25px;
+    background-color: rgb(101 99 238);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 160px;
     padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    height: 20px;
-    width: 80px;
-    position: fixed;
-    top: 15px;
-    right: 10px
+    border-width: 0px;
 }
 
-.circle {
-    border-radius: 100%;
-    position: absolute;
+.line {
+    width: 90%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    width: 40px;
-    height: 40px;
-    top: 5px;
-    left: 6px;
-    
-    background-image: url("darkThemeSwitch/sun.jpg");
-    background-color: rgb(84, 94, 104);
-    background-size: 30px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease 0s;
-}
-
-.circle.night {
-    transform: translate(145%,0);
-    background-image: url("darkThemeSwitch/moon.jpg");
-}
-#dsctitle {
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 37px;
-    letter-spacing: 0.8px;
-    word-spacing: -4.4px;
-    font-weight: 400;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: none;
-}
-#dcprofile {
-    position: static;
-    font-family: inherit;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(48 48 53);
     border-radius: 10px;
-    text-align: left;
-    left: 10px;
-    padding-bottom: 10px;
-    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sections {
+    margin-top: 40px;
+    width: 99%;
+    color: rgb(143 143 148);
+    tab-size: 4;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.section {
+    border-radius: 10px;
+    border-color: rgb(48 48 53);
+    border-style: solid;
     height: fit-content;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    background-color: rgb(21 21 27);
+    align-self: center;
+    margin: 20px;
+    transition: 0.6s;
 }
 
-#profileicon {
-    width: 64px;
-    height: 64px;
-    position: static;
-    border-radius: 100%;
-    margin-top: 8px;
-    margin-left: 8px;
+.section:hover {
+    background-color: rgb(42, 42, 51);
+    color: rgb(175, 175, 182);
 }
 
-.flexed {
+.subdsection {
     display: flex;
-}
-
-#nickname {
-    position: static;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    margin-left: 0px;
-    margin-right: 8px;
-    color:antiquewhite;
-}
-
-#profiledescription {
-    position: static;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 10px;
-    color:aliceblue;
-    font-size: 25px;
-    margin-left: 5px;
+    height: 100px;
+    align-items: center;
+    margin-left: 10px;
     margin-right: 10px;
+    text-align:start;
 }
 
-.capimg {
-    position: fixed;
-    right: 1%;
-    bottom:1%;
-    overflow: hidden;
-}
-
-#squaredimage {
-    border-color: black;
-    border-style: groove;
-    border-radius: 5px;
-    border-width: 5px;
-}
-
-.downground {
-    background-color:darkslategray;
-    height: fit-content;
-    position: static;
+.subimg {
+    float: left;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 1px;
+    background-color: rgb(66 119 255);
+    padding: 5px;
 }
 
-#downgroundname {
-    color: #f9d876;
-    font-size: 40px;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 10px;
-}
-
-.dgsection {
-    position: static;
-    background-color: #4a5a6c;
-    border-radius: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+.subtitle {
+    float: right;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    color: rgb(255 255 255);
     width: fit-content;
     height: fit-content;
     margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 0 1px #000;
+}
+
+.sectext {
+    float: none;
+    display: block;
+    padding: 10px;
+}
+
+.popjopi {
+    border-radius: 10px;
+    border-color: rgb(48 48 53);
+    border-style: solid;
+}
+
+.pjtitle {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    color: rgb(255 255 255);
+    text-align: center;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.dcprofile {
+    border-radius: 10px;
+    border-color: rgb(48 48 53);
+    border-style: solid;
+    margin: 10px;
+    transition: 0.6s;
+}
+
+.dcprofile:hover {
+    background-color: rgb(42, 42, 51);
+    color: rgb(175, 175, 182);
+}
+
+.dcprofilemodel {
+    width: fit-content;
+    height: 40px;
+    background-color: rgb(47, 47, 49);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#profileicon {
+    width: 10;
+    height: 40;
+    border-radius: 100%;
+    float: left;
+}
+
+.nickname {
+    color: rgb(255 255 255);
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.profiledescription {
+    color: rgb(255 255 255);
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-size: large;
+    margin-left: 10px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+
+.warninfo{
+    color: rgb(152, 0, 0);
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-size: large;
+    margin-left: 10px;
+}
+
+.copyrights{
+    text-align: left !important;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 30px;
+    margin: 0;
+    color: #666;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.downground {
+    border-radius: 10px;
+    border-color: rgb(48 48 53);
+    border-style: solid;
+    height: fit-content;
+    background-color: rgb(21 21 27);
+    align-self: center;
+    margin: 20px;
+}
+
+.dgsection {
+    border-radius: 10px;
+    border-color: rgb(48 48 53);
+    border-style: solid;
+    height: fit-content;
+    background-color: rgb(21 21 27);
+    align-self: center;
+    margin: 20px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-size: large;
+    margin-left: 10px;
+    transition: 0.6s;
+}
+
+.dgsection:hover {
+    background-color: rgb(42, 42, 51);
+    color: rgb(175, 175, 182);
 }
 
 #question {
@@ -237,43 +268,4 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
-}
-
-.copyrights{
-    text-align: left !important;
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: 30px;
-    margin: 0;
-    color: #666;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.pimg {
-    margin-top: 10px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    display: block;
-    align-self: center;
-    width: 70%;
-}
-
-.discordframe {
-    height: 500px;
-    width: 95%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-
-#list {
-    list-style-type: disc !important;
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
 }

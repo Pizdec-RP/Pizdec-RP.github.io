@@ -72,10 +72,6 @@ body {
     padding-bottom: 10px;
 }
 
-.titlebox.night {
-    background-color: #7e303082;
-}
-
 .title {
     background-color: #00c907;
     border-radius: 10px;
@@ -83,10 +79,6 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     transition: all 0.5s;
-}
-
-.title.night {
-    background-color: #b90000;
 }
 
 #ttl {

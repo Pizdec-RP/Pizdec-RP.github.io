@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"></link>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ product }}</h1>
+        <div class="product">
+            
+            <div id="part" class="product-image">
+                <img :src="image" width="300" height="300" />
+            </div>
+            
+            <div id="part" class="product-info">
+                <div class="variations">
+                    <div class="variation" v-for="variant in variants">
+                        {{ variant.variantColor }}
+                    </div>
+                </div>
+                <div class="sizes">
+                    Размеры: 
+                    <div class="size" v-for="size in sizes">
+                        {{ size }}
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="part" class="cart">
+                <div class="inf">В наличии: {{ inventory }} </div>
+                <div class="inf" id="price">
+                    <div>
+                        {{ price - price/countdown }} ₽
+                    </div>
+                    <div class="cd">
+                        - {{ countdown }} %
+                    </div>
+                </div>
+                <div class="inf">Доставка через 5 дней </div>
+                <button class="addtocart" v-on:click="addToCart">В корзину</button>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

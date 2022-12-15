@@ -1,0 +1,94 @@
+.product {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  align-content: space-between;
+  justify-content: space-around;
+  
+}
+
+#part {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-left: 30px;
+  font-size: 35px;
+}
+
+.product-info {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.variations {
+  display: flex;
+  
+}
+
+.variation {
+  border-radius: 4px;
+  border-style: dashed;
+  border-width: 1.3px;
+  margin: 4px 8px 4px 0px;
+  padding: 6px 14px;
+}
+
+.sizes {
+  display: flex;
+  margin-top: 20px;
+}
+
+.size {
+  margin-left: 8px;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+}
+
+.cart {
+  background: #deb6b6;
+  border-radius: 20px;
+  padding: 16px 18px;
+  height: fit-content;
+  font-weight: 600;
+}
+
+.inf {
+  margin-bottom: 10px;
+}
+
+.addtocart {
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: #d0e328;
+  border-width: 0px;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#price {
+  color: red;
+  font-weight: 500;
+  font-size: 25px;
+  display: flex;
+}
+
+.cd {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-left: 4px;
+  height: 20px;
+  font-size: 15px;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+}

@@ -92,3 +92,17 @@ h1 {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.usercart {
+  background-color: rgb(49, 176, 176);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 16px 18px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.dsc {
+  font-weight: 500;
+  font-size: 15px;
+}

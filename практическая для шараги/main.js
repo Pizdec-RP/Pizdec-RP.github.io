@@ -1,7 +1,7 @@
 var app = new Vue({
     el: "#app",
     data: {
-      product: "Носки ",
+      product: "Носки",
       image: "socks.png",
       sostav: ["80% хлопок", "20% полиестр"],
       perks: [""],
@@ -19,7 +19,8 @@ var app = new Vue({
       ],
       varcurrent: 0,
       inventory: 13,
-      sizes: ["S","M","L","XL","XXL"]
+      sizes: ["S","M","L","XL","XXL"],
+      cart: 0
     },
 
     methods: {

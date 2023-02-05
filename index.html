@@ -6,225 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ПКССМ</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
 </head>
 <body>
-    <div class="main">
-        <div class="pictureandname">
-            <div class="namecase">
-                <div class="name">
-                    <p>Подпольный Клуб Супер Сексуальных Мужиков (ПКССМ)</p>
+    <div id="app">
+        <div class="main">
+            <div class="pictureandname">
+                <div class="namecase">
+                    <div class="name">
+                        <p>Подпольный Клуб Супер Сексуальных Мужиков (ПКССМ)</p>
+                    </div>
+                    <div class="nameinfa">
+                        Ты наверно думаешь что же за хуйня этот ваш ПКССМ?
+                        Так вот, хуйня это могила твоего мертвого бати,
+                            а ПКССМ это ахуительный сервер для натуральных геев и гейских натуралов где можно попросить админа
+                            зарейдить какую нибудь шкилярную помойку в майнкрафте бесплатно без смс и регистрации
+                    </div>
+                    <form>
+                        <input class="inv" type="button" onclick="redirect();" value="Присоединиться"/>
+                    </form>
                 </div>
-                <div class="nameinfa">
-                    Ты наверно думаешь что же за хуйня этот ваш ПКССМ?
-                    Так вот, хуйня это могила твоего мертвого бати,
-                        а ПКССМ это ахуительный сервер для натуральных геев и гейских натуралов где можно попросить админа
-                        зарейдить какую нибудь шкилярную помойку в майнкрафте бесплатно без смс и регистрации
-                </div>
-                <form>
-                    <input class="inv" type="button" onclick="redirect();" value="Присоединиться"/>
-                </form>
-            </div>
-            <img class="pimg" src="pngs/5opkavahue.jpg" width="500" height="300">
-        </div>
-
-        <div class="line"></div>
-
-        <div class="sections">
-            <div class="section">
-                <div class="subdsection">
-                    <img class="subimg" src="interactiveMinecraftWorld/textures/bedrock.png" width="32" height="32">
-                    <p class="subtitle">Почему ты обязан зайти к нам:</p>
-                </div>
-                <div class="sectext">
-                    <ul id="list">
-                        <li>бесплатные рейды</li>
-                        <li>прога для рейда(без вирусов 1488% атвечаю очком)</li>
-                        <li>тролим школоту по кд</li>
-                        <li>админам 10 лет</li>
-                        <li>очень много срачей</li>
-                        <li>есть своя личная шлюха(умерла)</li>
-                        <li>секс сиськи тачки админки хуинки</li>
-                    </ul>
-                </div>
+                <img class="pimg" src="pngs/5opkavahue.jpg" width="500" height="300">
             </div>
 
-            <div class="section">
+            <div class="line"></div>
+
+            <div class="events">
                 <div class="subdsection">
                     <img class="subimg" src="darkThemeSwitch/sun.jpg" width="32" height="32">
                     <p class="subtitle">События сервера:</p>
                 </div>
                 <div class="sectext">
-                    <p>04.09.22 - Сервак создан</p>
-                    <p>05.11.22 - Шлюха по имени robertkamar404#1510 по рофлу кинул репорт на админов якобы о том,
-                        что мы младше 13 лет.
-                        Пидирас. За это он был забанен нахуй. Пруфы удалены
-                         (плачь дура меня разбанили)
+                    <p v-for="event in events">{{event.date}} - {{event.event}}</p>
+                    
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="sections">
+                <div class="section">
+                    <div class="subdsection">
+                        <img class="subimg" src="interactiveMinecraftWorld/textures/bedrock.png" width="32" height="32">
+                        <p class="subtitle">Почему ты обязан зайти к нам:</p>
+                    </div>
+                    <div class="sectext">
+                        <ul id="list">
+                            <li>бесплатные рейды</li>
+                            <li>прога для рейда(без вирусов 1488% атвечаю очком)</li>
+                            <li>тролим школоту по кд</li>
+                            <li>админам 10 лет</li>
+                            <li>очень много срачей</li>
+                            <li>есть своя личная шлюха(умерла)</li>
+                            <li>секс сиськи тачки админки хуинки</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="subdsection">
+                        <img class="subimg" src="interactiveMinecraftWorld/textures/dirt.png" width="32" height="32">
+                        <p class="subtitle">Прошмандовки ПКССМ:</p>
+                    </div>
+                    <div class="sectext">
+                        <div class="dcprofilemodel">
+                            <img id="profileicon" src="https://cdn.discordapp.com/avatars/929815619770122270/42591fe31fbaf07db5e0a9546a598576.webp?size=40" onError="this.src='pngs/cantload.png'">
+                            <p class="nickname">robertkamar404#1510</p>
+                        </div>
+                        <div class="dcprofilemodel">
+                            <img id="profileicon" src="https://cdn.discordapp.com/avatars/952256354326839356/a7e51bd6fd4ab79b37afb47822568868.webp?size=40"  onError="this.src='pngs/cantload.png'">
+                            <p class="nickname">Вор Володя Плутин#7413</p>
+                        </div>
+                        <div class="dcprofilemodel">
+                            <img id="profileicon" src="https://cdn.discordapp.com/avatars/922464194211770428/e2d515d5e63a256449f1c7a080b28644.webp?size=40" onError="this.src='pngs/cantload.png'">
+                            <p class="nickname">Hearless#6429</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="popjopi">
+                <div class="pjtitle">
+                    <p>Список популярных жоп сервера (из тех кто есть на пкссм)</p>
+                </div>
+                
+                <div class="profiles">
+                    <div class="dcprofile" v-for="pj in popjopi">
+                        <div class="dcprofilemodel">
+                            <img :src="` ${ pj.ava } `" id="profileicon" onError="this.src='pngs/cantload.png'"/>
+                            <p class="nickname"> {{ pj.nick }} </p>
+                        </div>
+                        <p class="profiledescription"> {{ pj.description }} </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="downground">
+                <p class="pjtitle">Вопросы и ответы</p>
+                <div class="dgsection">
+                    <p id="question"> - Вы задудосили мой сервер по майнкрафту, я хочу кинуть на вас репорт</p>
+                    <p id="answer"> - Иди нахуй шлюха ебаная. Рейды в майне легальны, тебе откажут</p>
+                </div>
+
+                <div class="dgsection">
+                    <p id="question"> - Я ссу что в вашей проге вирусы. Какие гарантии что она чистая?</p>
+                    <p id="answer"> - Мы ее сами юзаем, можешь прочекать на вирустотале + есть опенсурс</p>
+                </div>
+
+                <div class="dgsection">
+                    <p id="question"> - Можете зарейдить дискорд сервер одних пидарасов пж?</p>
+                    <p id="answer"> - Нет, иди нахуй, мы таким не занимаемся больше</p>
+                </div>
+
+                <div class="dgsection">
+                    <p id="question"> - Я вас по айпи вычислю</p>
+                    <p id="answer"> - Пон</p>
+                </div>
+
+                <div class="dgsection">
+                    <p id="question"> - Сервер блокнули и удалили и мою учетку тоже, я немогу вас найти, че делать?</p>
+                    <p id="answer"> - Можно просто подождать, я обновлю ссылку на сайте как только узнаю о блокировке сервера, ну или вот список моих твинков:
+                        <br>vk: @p1zdec_rp_tvink</br><br>discord:</br><br>* faded#3565</br><br>* pizdecc nrp#2103</br><br>* report me pls#8638</br><br>* biba.sos#2065</br>
                     </p>
-                    <p>09.11.22 - Андрей витальевич накрутил 350 ботов на сервер просрав 1 доллар. нахуя? незнаю</p>
-                    <p>10.11.22 - в 2 ночи были сброшены все приглашения на сервер чтобы боты больше не заходили</p>
                 </div>
             </div>
 
-            <div class="section">
-                <div class="subdsection">
-                    <img class="subimg" src="interactiveMinecraftWorld/textures/dirt.png" width="32" height="32">
-                    <p class="subtitle">Прошмандовки ПКССМ:</p>
-                </div>
-                <div class="sectext">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/929815619770122270/42591fe31fbaf07db5e0a9546a598576.webp?size=40" onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">robertkamar404#1510</p>
-                    </div>
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/952256354326839356/4bb6b1245ec6c75a1c117044b0b5ab7d.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Вор Володя Плутин#7413</p>
-                    </div>
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/922464194211770428/e2d515d5e63a256449f1c7a080b28644.webp?size=40" onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Hearless#6429</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="line"></div>
 
-        <div class="line"></div>
-
-        <div class="popjopi">
-            <div class="pjtitle">
-                <p>Список популярных жоп сервера (из тех кто есть на пкссм)</p>
-            </div>
+            <iframe class="discordframe" src="https://discord.com/widget?id=1015980011041329164&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             
-            <div class="profiles">
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/942517025908064358/20061c82c09953499ce7f072d46fa03d.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Pizdec RP#0706</p>
-                    </div>
-                    <p class="profiledescription">Овнер ПКССМ. В числе учасников еще со времен зарождения БСДО. Ah fuck you, leatherman</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/855504190365499433/e33d82990087c909ccb080497438a3b4.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Putlёr#(тег скрыт)</p>
-                    </div>
-                    <p class="profiledescription">Овнер ПКССМ. В числе учасников еще со времен зарождения БСДО. Любит писать латиницей</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/891882505467211876/10483395f8889e268638812ef6c423b2.webp?size=48"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Title#2892</p>
-                    </div>
-                    <p class="profiledescription">Овнер ПКССМ. В числе учасников со времен распада РСА и Рекрута. Дрочер си шарпа</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/662608726339092490/a0754f8bbb5b11f81bf54e64ebc961e8.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Citizen#0709</p>
-                    </div>
-                    <p class="profiledescription">Овнер ПКССМ. В числе учасников во зарождения БСДО. Был овнером рекрута. Ceo of world</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/576142671819571231/d83abd79188a11ff1bce897ab649d2b1.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">pixelik#4990</p>
-                    </div>
-                    <p class="profiledescription">Друг овнеров. В числе учасников с первого БСДО. Желтый фурри баран</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/952256354326839356/a7e51bd6fd4ab79b37afb47822568868.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Вор Володя Плутин#7413</p>
-                    </div>
-                    <p class="profiledescription">Овнер ПКССМ. В числе учасников со времен распада первого БСДО. Был овнером САКСа. Любит хуи</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/855770554920075275/aeafd8af35f4876b3244101f56df859c.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Викуся#1346</p>
-                    </div>
-                    <p class="profiledescription">Подруга админов и проститутка. В числе учасников со времен зарождения ПКССМ. Не выходит на связь уже 2 месяца(щас 01.11.22)</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/1023878135999107072/a_ce70f6b2eb7cfc00cd19fd57fd1dc3a6.gif?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Uwutaku#0001</p>
-                    </div>
-                    <p class="profiledescription">Чел который выиграл Pizdec RP в дуэле в бравл старс и таким образом получил роль. ПрофесиАНАЛЬНЫЙ дудосер с фрисофтом. В числе учасников с начала зарождения ПКССМ</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/693861733558779934/3f16bece44641d1a045345ad76b3b386.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">kostoli#6581</p>
-                    </div>
-                    <p class="profiledescription">Стал админом за счет актива в чате. Уважает гитлера. Пришел на ПКССМ в середине его развития</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/855504361001844796/3bc626a411c5159354bfd4d3855dc182.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">севен#1929</p>
-                    </div>
-                    <p class="profiledescription">Олд БСДО, АБС и рейдерских параш. Более известен как Seven_Seas. цитата: "ну я типо олд крутой ебал жожо в роблоксе"</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/824687054121205820/6afc3efdf373d6074554b0189f908165.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">Pepe Frog#5430</p>
-                    </div>
-                    <p class="warninfo">Оригинальный акк утерян. Аналог: platoshka#0693</p>
-                    <p class="profiledescription">Олд всего мира. Ветеран рейдов с гангстером. С нами со времен 1го бсдо</p>
-                </div>
-                <div class="dcprofile">
-                    <div class="dcprofilemodel">
-                        <img id="profileicon" src="https://cdn.discordapp.com/avatars/467290739219496960/a0f4ec16caa9ac79c4dc5d3d66888e15.webp?size=40"  onError="this.src='pngs/cantload.png'">
-                        <p class="nickname">ay0ks#(тег скрыт)</p>
-                    </div>
-                    <p class="profiledescription">Олд рейдерства в дискорде, крутой челик. Дима трахай меня всего пж</p>
-                </div>
+            <div class="line"></div>
+            
+            <div class="copyrights">
+                <p>© 2020-2022 bsdo-pkssm. All rights not reserved</p>
             </div>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="downground">
-            <p class="pjtitle">Вопросы и ответы</p>
-            <div class="dgsection">
-                <p id="question"> - Вы задудосили мой сервер по майнкрафту, я хочу кинуть на вас репорт</p>
-                <p id="answer"> - Иди нахуй шлюха ебаная. Рейды в майне легальны, тебе откажут</p>
-            </div>
-
-            <div class="dgsection">
-                <p id="question"> - Я ссу что в вашей проге вирусы. Какие гарантии что она чистая?</p>
-                <p id="answer"> - Мы ее сами юзаем, можешь прочекать на вирустотале + есть опенсурс</p>
-            </div>
-
-            <div class="dgsection">
-                <p id="question"> - Можете зарейдить дискорд сервер одних пидарасов пж?</p>
-                <p id="answer"> - Нет, иди нахуй, мы таким не занимаемся больше</p>
-            </div>
-
-            <div class="dgsection">
-                <p id="question"> - Я вас по айпи вычислю</p>
-                <p id="answer"> - Пон</p>
-            </div>
-
-            <div class="dgsection">
-                <p id="question"> - Сервер блокнули и удалили и мою учетку тоже, я немогу вас найти, че делать?</p>
-                <p id="answer"> - Можно просто подождать, я обновлю ссылку на сайте как только узнаю о блокировке сервера, ну или вот список моих твинков:
-                    <br>vk: @p1zdec_rp_tvink</br><br>discord:</br><br>* faded#3565</br><br>* pizdecc nrp#2103</br><br>* report me pls#8638</br><br>* biba.sos#2065</br>
-                </p>
-            </div>
-        </div>
-
-        <div class="line"></div>
-
-        <iframe class="discordframe" src="https://discord.com/widget?id=1015980011041329164&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        
-        <div class="line"></div>
-        
-        <div class="copyrights">
-            <p>© 2020-2022 bsdo-pkssm. All rights not reserved</p>
         </div>
     </div>
 </body>
+<script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
 </html>

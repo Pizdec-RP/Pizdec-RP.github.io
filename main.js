@@ -49,6 +49,10 @@ var app = new Vue({
             {
                 date: "09.04.23 23:00",
                 event: "пиздец рп снова овнер ура"
+            },
+            {
+                date: "04.05.23",
+                event: "нас жеско переблокали, задели токенобазу навальнят и изза этого ебнули основу PZ DC#0706"
             }
         ],
         "popjopi" : [
@@ -135,7 +139,7 @@ var app = new Vue({
 
 function redirect() {
     alert("Внимание!!!\nПереходя по ссылке вы подтверждаете что вы реально сексуальный мужик или просто крутая телка")
-    window.location.href = 'https://discord.gg/CcHQPHXPtH';
+    window.location.href = 'https://discord.gg/h8M2JN5bjD';
 }
 
 function getssize() {

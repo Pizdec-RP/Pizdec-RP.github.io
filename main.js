@@ -138,7 +138,7 @@ var app = new Vue({
 //alert("Внимание сервер только что ебнули модеры дса так что вот новый заходите https://discord.gg/U9KzkZduWs")
 
 function redirect() {
-    window.location.href = 'ds.pkssm.keenetic.pro/';
+    window.location.href = 'https://ds.pkssm.keenetic.pro/';
 }
 
 function getssize() {
